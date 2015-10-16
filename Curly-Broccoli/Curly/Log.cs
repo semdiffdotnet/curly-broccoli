@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Curly
 {
-    public class Class1
+    public class Log
     {
+        public string Message { get; set; }
     }
 }
