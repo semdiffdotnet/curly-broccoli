@@ -17,7 +17,7 @@ namespace Curly
         /// Adds a single message to the log list
         /// </summary>
         /// <param name="log"></param>
-        public void Log(Log log)
+        public virtual void Log(Log log)
         {
             _logs.Add(log);
         }
@@ -26,7 +26,7 @@ namespace Curly
         /// Calls log method to add each item of supplied list
         /// </summary>
         /// <param name="logs"></param>
-        public void LogAll(IEnumerable<Log> logs)
+        public virtual void LogAll(IEnumerable<Log> logs)
         {
             foreach(var l in logs)
             {
