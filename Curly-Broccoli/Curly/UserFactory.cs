@@ -19,7 +19,7 @@ namespace Curly
         /// <summary>
         ///  Pellentesque ex tellus, tincidunt nec tortor sed, vulputate congue eros. Maecenas vitae erat orci. 
         /// </summary>
-        public Logger Logger { get; } = new Logger();
+        public Logger Logger { get; } = new ConsoleLogger();
         /// <summary>
         /// Vivamus in ligula ac sapien dictum accumsan nec vel elit. Donec semper est id commodo tempus. Donec in mollis ante. Suspendisse volutpat nulla nisl, venenatis facilisis augue faucibus ac. In eget velit non felis pellentesque condimentum quis sit amet sem. Etiam maximus erat dolor, ac pretium massa placerat a. Donec non gravida neque, non molestie turpis. Phasellus in eros eget risus malesuada hendrerit. Vestibulum dignissim sem nunc, non tempus lorem fermentum a. Curabitur eget velit id odio faucibus pellentesque ac quis mi. Duis suscipit suscipit porta. Cras pellentesque finibus lacinia. Mauris sagittis convallis purus vitae interdum. Pellentesque dolor purus, hendrerit eu odio ac, fermentum rhoncus quam.
         /// </summary>
