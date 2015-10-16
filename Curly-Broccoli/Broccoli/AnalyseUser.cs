@@ -19,6 +19,8 @@ namespace Broccoli
         {
             if (string.IsNullOrWhiteSpace(user.about))
                 throw new InvalidOperationException();
+            if (string.IsNullOrWhiteSpace(user.guid))
+                throw new InvalidOperationException();
             Function2(user);
         }
         /// <summary>
@@ -30,15 +32,6 @@ namespace Broccoli
             if (string.IsNullOrWhiteSpace(user.name))
                 throw new InvalidOperationException();
             Function3(user);
-        }
-        /// <summary>
-        /// Praesent id mauris molestie nisi tristique ullamcorper. Proin tortor metus, gravida eu ullamcorper id, gravida vitae felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis, libero et ullamcorper tristique, ante lectus ornare ex, non dapibus odio neque nec tellus.
-        /// </summary>
-        /// <param name="user">Praesent facilisis tortor non quam rhoncus gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut erat id metus condimentum pharetra vitae et sapien</param>
-        public void Function12(User user)
-        {
-            if (string.IsNullOrWhiteSpace(user.eyeColor))
-                throw new InvalidOperationException();
         }
         /// <summary>
         /// Sed laoreet, erat sit amet sollicitudin tristique, nibh nunc vestibulum nisl, non scelerisque nisi lorem quis mi. In mauris nisl, consectetur id odio in, sagittis egestas leo. 
@@ -128,6 +121,15 @@ namespace Broccoli
             if (string.IsNullOrWhiteSpace(user.phone))
                 throw new InvalidOperationException();
             Function12(user);
+        }
+        /// <summary>
+        /// Praesent id mauris molestie nisi tristique ullamcorper. Proin tortor metus, gravida eu ullamcorper id, gravida vitae felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis, libero et ullamcorper tristique, ante lectus ornare ex, non dapibus odio neque nec tellus.
+        /// </summary>
+        /// <param name="user">Praesent facilisis tortor non quam rhoncus gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut erat id metus condimentum pharetra vitae et sapien</param>
+        public void Function12(User user)
+        {
+            if (string.IsNullOrWhiteSpace(user.eyeColor))
+                throw new InvalidOperationException();
         }
     }
 }
