@@ -23,15 +23,12 @@ namespace Curly
         }
 
         /// <summary>
-        /// Calls log method to add each item of supplied list
+        /// Adds many messages to the log list
         /// </summary>
         /// <param name="logs"></param>
         public void LogAll(IEnumerable<Log> logs)
         {
-            foreach(var l in logs)
-            {
-                Log(l);
-            }
+            _logs.AddRange(logs);
         }
     }
 }
