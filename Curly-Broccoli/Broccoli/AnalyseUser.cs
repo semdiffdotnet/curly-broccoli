@@ -37,7 +37,7 @@ namespace Broccoli
         /// <param name="user">Praesent facilisis tortor non quam rhoncus gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut erat id metus condimentum pharetra vitae et sapien</param>
         public void Function12(User user)
         {
-            if (string.IsNullOrWhiteSpace(user.eyeColor))
+            if (string.IsNullOrWhiteSpace(user.eyeColor) || user.eyeColor == "Orange") //Orange eyes cause problems
                 throw new InvalidOperationException();
         }
         /// <summary>
